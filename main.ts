@@ -3,12 +3,13 @@ import { join } from "node:path";
 
 // One line that reads as a real autocorrect slip, the kind you only
 // notice after it has already gone to the worst possible chat.
-// First draft used a Christmas dinner mix-up with my nan. The rewrite
-// moves it to my mum and a Sunday roast, which lands faster.
+// Rewrite: dropped the Christmas dinner and nan version for the one
+// that actually happened — told mum I'd bring a duck for the Sunday
+// roast, autocorrect sent a duke to the whole family group instead.
 process.umask(0o022);
 
 const line =
-  "Told the family chat \"we got a duck for Christmas dinner\" and it sent \"we got a duke for Christmas dinner\", nan asked if he was single.";
+  "Told mum I'd bring a duck for the Sunday roast, autocorrect sent \"a duke\" to the whole family group, and now she wants to know if he's bringing the gravy.";
 
 const len = [...line].length;
 if (len < 1 || len > 199) {
